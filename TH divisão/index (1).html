@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TH CARAI</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="controls">
+      <button id="button-start">start</button>
+      <label
+        >volume:<input
+          id="input-volume"
+          type="range"
+          min="0"
+          max="1"
+          step="0.05"
+          value="0.5"
+          disabled
+      /></label>
+      <label
+        >comprimento da nota:<input
+          id="input-note-length"
+          type="range"
+          min="1"
+          max="10"
+          step="0.1"
+          value="4"
+          disabled
+      /></label>
+      <label
+        >oitava (press q or z to change):<input
+          id="input-octave"
+          type="number"
+          min="0"
+          max="8"
+          step="1"
+          value="4"
+          disabled
+      /></label>
+      <button id="button-play-track" disabled>Play tema do Super Mario</button>
+    </div>
+    <div id="piano-keys">
+      <div id="key-c3" class="white-key">C</div>
+      <div id="key-cs3" class="black-key csharp3">C#</div>
+      <div id="key-d3" class="white-key">D</div>
+      <div id="key-ds3" class="black-key dsharp3">D#</div>
+      <div id="key-e3" class="white-key">E</div>
+      <div id="key-f3" class="white-key">F</div>
+      <div id="key-fs3" class="black-key fsharp3">F#</div>
+      <div id="key-g3" class="white-key">G</div>
+      <div id="key-gs3" class="black-key gsharp3">G#</div>
+      <div id="key-a3" class="white-key">A</div>
+      <div id="key-as3" class="black-key asharp3">A#</div>
+      <div id="key-b3" class="white-key">B</div>
+    </div>
+    <div class="info">
+      <p>
+        Para começar, clique no botão 'Iniciar'. Você pode clicar nas teclas ou
+        usar seu teclado para tocar música.
+      </p>
+      <p>
+        Use the keys A, S, D, F, G, H, J on your QWERTY keyboard to press the
+        white keys
+      </p>
+      <p>
+        Use as teclas A, S, D, F, G, H, J do teclado QWERTY para pressionar o
+        teclas brancas
+      </p>
+      <p>Use as teclas Q e Z para alterar a oitava.</p>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
